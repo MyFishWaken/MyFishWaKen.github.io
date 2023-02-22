@@ -157,6 +157,63 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://myfishawaken.github.io/2023/02/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%87%AA%E6%88%91%E8%A7%81%E8%A7%A3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="米log">
+      <meta itemprop="description" content="人为刀俎，我为大鱼大肉">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MyFishWaken">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/02/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%87%AA%E6%88%91%E8%A7%81%E8%A7%A3/" class="post-title-link" itemprop="url">数据库自我见解</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-02-22 16:22:20" itemprop="dateCreated datePublished" datetime="2023-02-22T16:22:20+08:00">2023-02-22</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://myfishawaken.github.io/2023/02/21/%E4%BB%A3%E7%A0%81%E5%88%B7%E9%A2%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -183,6 +240,22 @@
 
               <time title="创建时间：2023-02-21 16:22:06" itemprop="dateCreated datePublished" datetime="2023-02-21T16:22:06+08:00">2023-02-21</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-02-23 00:02:08" itemprop="dateModified" datetime="2023-02-23T00:02:08+08:00">2023-02-23</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%BB%A3%E7%A0%81/" itemprop="url" rel="index"><span itemprop="name">代码</span></a>
+                </span>
+            </span>
 
           
 
@@ -195,7 +268,13 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          
+          <ol>
+<li><p>好数组<br>给你一个正整数数组 nums，你需要从中任选一些子集，然后将子集中每一个数乘以一个 任意整数，并求出他们的和。<br>假如该和结果为 1，那么原数组就是一个「好数组」，则返回 True；否则请返回 False。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"> <span class="meta">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span></span></span><br><span class="line"> <span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string&gt;</span></span></span><br><span class="line"> <span class="comment">//using std::string;</span></span><br><span class="line"> <span class="comment">//using std::cout;</span></span><br><span class="line"> <span class="comment">//using std::endl;</span></span><br><span class="line"> <span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"> <span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">     <span class="keyword">public</span>:</span><br><span class="line">         <span class="built_in">Solution</span>() &#123;&#125;</span><br><span class="line">         <span class="comment">//辗转相除法</span></span><br><span class="line">         <span class="function"><span class="type">int</span> <span class="title">gcd</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> </span>&#123;</span><br><span class="line">             <span class="type">int</span> r = <span class="number">0</span>;</span><br><span class="line">             <span class="keyword">if</span> (a &lt; b) &#123;</span><br><span class="line">                 a += b;</span><br><span class="line">                 b = a - b;</span><br><span class="line">                 a = a - b;</span><br><span class="line">             &#125;</span><br><span class="line">             r = a % b;</span><br><span class="line">             <span class="keyword">while</span> (r != <span class="number">0</span>) &#123;</span><br><span class="line">                 a = b;</span><br><span class="line">                 b = r;</span><br><span class="line">                 r = a % b;</span><br><span class="line">             &#125;</span><br><span class="line">             <span class="keyword">return</span> b;</span><br><span class="line"></span><br><span class="line">         &#125;</span><br><span class="line">         <span class="function"><span class="type">bool</span> <span class="title">isGoodArray</span><span class="params">(vector&lt;<span class="type">int</span>&gt; &amp;nums)</span> </span>&#123;</span><br><span class="line">             <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; nums.<span class="built_in">size</span>(); i++) &#123;</span><br><span class="line">                 <span class="type">int</span> g = <span class="keyword">this</span>-&gt;<span class="built_in">gcd</span>(nums[i], nums[i - <span class="number">1</span>]);</span><br><span class="line">                 <span class="keyword">if</span> (g == <span class="number">1</span>)</span><br><span class="line">                     <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">             &#125;</span><br><span class="line">             <span class="keyword">return</span> nums[<span class="number">0</span>] == <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">         &#125;</span><br><span class="line"> &#125;;</span><br><span class="line"></span><br><span class="line"> <span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">     vector&lt;<span class="type">int</span>&gt; nums;</span><br><span class="line">     <span class="type">int</span> a;</span><br><span class="line">     <span class="keyword">while</span> (cin &gt;&gt; a) &#123;</span><br><span class="line">         nums.<span class="built_in">push_back</span>(a);</span><br><span class="line">     &#125;</span><br><span class="line">     cin.<span class="built_in">clear</span>();</span><br><span class="line">     Solution b;</span><br><span class="line">     std::string s = b.<span class="built_in">isGoodArray</span>(nums) ? <span class="string">&quot;yes&quot;</span> : <span class="string">&quot;no&quot;</span>;</span><br><span class="line">     cout &lt;&lt; s;</span><br><span class="line">     <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li></li>
+</ol>
+
       
     </div>
 
@@ -419,20 +498,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
